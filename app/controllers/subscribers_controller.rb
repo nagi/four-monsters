@@ -25,7 +25,7 @@ class SubscribersController < ApplicationController
 
     respond_to do |format|
       if @subscriber.save
-        format.html { redirect_to @subscriber, notice: "Subscriber was successfully created." }
+        format.html { redirect_to @subscriber, notice: "Successfully signed up." }
         format.json { render :show, status: :created, location: @subscriber }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class SubscribersController < ApplicationController
   def update
     respond_to do |format|
       if @subscriber.update(subscriber_params)
-        format.html { redirect_to @subscriber, notice: "Subscriber was successfully updated." }
+        format.html { redirect_to @subscriber, notice: "Successfully updated." }
         format.json { render :show, status: :ok, location: @subscriber }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -51,7 +51,7 @@ class SubscribersController < ApplicationController
   def destroy
     @subscriber.destroy
     respond_to do |format|
-      format.html { redirect_to subscribers_url, notice: "Subscriber was successfully destroyed." }
+      format.html { redirect_to subscribers_url, notice: "Successfully deleted." }
       format.json { head :no_content }
     end
   end
