@@ -1,0 +1,64 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  font-family: sans-serif;
+  background-color: black;
+  text-align: center;
+}
+
+.monsters {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  width: 100%;
+  margin-top: 80px;
+
+}
+
+h1 {
+  color: white;
+}
+
+h3 {
+  margin-top: 24px;
+  color: white;
+}
+
+a {
+  border: 2px solid white;
+  padding: 3px 4px;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+.red:hover {
+  color: rgb(193, 7, 7);
+  border: 2px solid rgb(193, 7, 7);
+  text-decoration-color: rgb(193, 7, 7);
+}
+
+.blue:hover {
+  color: rgb(62, 28, 255);
+  border: 2px solid rgb(62, 28, 255);
+  text-decoration-color: rgb(62, 28, 255);
+
+}
+
+.green:hover {
+  color: rgb(20, 233, 126);
+  border: 2px solid rgb(20, 233, 126);
+  text-decoration-color: rgb(20, 233, 126);
+
+}
+
+.purple:hover {
+  color: rgb(168, 60, 239);
+  border: 2px solid rgb(168, 60, 239);
+  text-decoration-color: rgb(168, 60, 239);
+
+}

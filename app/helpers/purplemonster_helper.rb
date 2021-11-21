@@ -1,0 +1,2 @@
+module PurplemonsterHelper
+end
