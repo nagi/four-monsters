@@ -1,5 +1,6 @@
-
-<h1>4 Monsters</h1>
+<div class="logo">
+  <%= image_tag asset_path('4MONSTERSlogo.png') %>
+</div>
 <h3>Choose your player...</h3>
   <div class="monsters">
     <div class="card redcard">
@@ -15,4 +16,15 @@
       <a href="purplemonster.html" class="purple">The Purple Monster</a>
     </div>
   </div>
-<h3 class="banner">This game is still in development, sign up <a href="subscribers/new.html" class="signup">here</a> to receive the latest updates!</h3>
+<h3 class="banner">This game is still in development, sign up here to receive the latest updates!</h3>
+
+<div class="form">
+  <%= form_for Subscriber.new do |f| %>
+    <div class="email">
+      <%= f.email_field :email, placeholder: "Email" %>
+    </div>
+    <div class="submit">
+      <%= f.submit value: "Subscribe" %>
+    </div>
+  <% end %>
+</div>
